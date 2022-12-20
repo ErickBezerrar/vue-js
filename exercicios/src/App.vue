@@ -1,16 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div>
+    <h1>{{ printnome() }}</h1>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+export default{
+    data(){
+        return{
+            nome: "Erick" , 
+            idade: 25
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+        }
+    },
+    methods: {
+      printnome(){
+        return this.nome
+      }  
+    },
 }
 </script>
 
