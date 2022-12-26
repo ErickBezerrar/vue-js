@@ -1,6 +1,7 @@
 <template>
 <div>
     <h1>{{ printnome() }}</h1>
+    <p>{{ idade, preco }}</p>
 </div>
 </template>
 
@@ -9,7 +10,8 @@ export default{
     data(){
         return{
             nome: "Erick" , 
-            idade: 25
+            idade: 25 , 
+            preco: 500
 
         }
     },
